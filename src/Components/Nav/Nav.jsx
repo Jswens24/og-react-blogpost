@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import logo from '../../images/dm_white_logo.png';
 import './Nav.css';
 
@@ -8,8 +9,12 @@ export default function Nav() {
         <img src={logo} alt="dm logo" />
       </div>
       <ul>
-        <li>Home</li>
-        <li>Topics</li>
+        <Link to='/'>
+          <li>Home</li>
+        </Link>
+        <Link to='/topics'>
+          <li>Topics</li>
+        </Link>
       </ul>
     </div>
   );
